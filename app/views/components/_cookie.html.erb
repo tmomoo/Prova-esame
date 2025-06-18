@@ -1,0 +1,22 @@
+<div class="flex justify-between items-center p-4 bg-gray-100 border border-gray-300 rounded-lg w-full mx-auto">
+    <div class="flex-1">
+        <h3 class="m-0 text-lg"><%= titolo_privacy %></h3>
+        <p class="mt-2 text-sm text-gray-600">
+            <%= testo_privacy %>
+        </p>
+    </div>
+    <div class="flex flex-col items-end">
+        <div class="flex items-center">
+            <a href="#" class="mr-4 text-sm text-blue-500 hover:underline"><%= bottone_personalizza %></a>
+            <div class="flex items-center">
+                <button class="mr-2 px-4 py-2 bg-black text-white rounded-full cursor-pointer hover:bg-gray-800"><%= bottone_rifiuta %></button>
+                <div class="flex items-center">
+                    <button class="px-4 py-2 bg-black text-white rounded-full cursor-pointer hover:bg-gray-800">
+                        <%= bottone_accetta %>
+                    </button>
+                    <span class="ml-24 text-lg text-gray-500">x</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,14 @@
+<%= render partial: 'components/cookie',
+    locals: {
+      titolo_privacy: 'Oltremare Travel',
+      testo_privacy: 'Cliccando su "Accetta tutti i cookie", l\'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare l\'utilizzo del sito e assistere nelle nostre attività di marketing.',
+      bottone_accetta: 'Accetta tutti',
+      bottone_rifiuta: 'Rifiuta',
+      bottone_personalizza: 'Impostazioni cookie'
+    }
+  %>
+
+
 <%= render partial: 'components/navbar',
   locals: {
     navbarlogo: '/images/navbar/logo.png',
@@ -26,7 +37,7 @@
 <%= render partial: 'components/introduzione',
   locals: {
     introduzioneimage: '/images/introduzione/san francisco.jpg',
-    introduzionetext: 'Prima Tappa',
+    introduzionetext: '',
     introduzionetitle: 'San Francisco',
     introduzionesubtitle: 'Introduzione',
     introduzionesubtitle2: 'A San Francisco, potrete esplorare una varietà di strutture e attrazioni, ognuna progettata per offrirvi un esperienza unica. Lasciatevi incantare dai panorami mozzafiato, dai quartieri pittoreschi e dalle attività culturali che rendono questa città così speciale. Siamo certi che ogni momento trascorso qui vi lascerà con gli occhi brillanti di gioia e meraviglia, creando ricordi indimenticabili per tutta la famiglia.',
@@ -136,7 +147,7 @@ Il Grand Canyon non si attraversa come una tappa da spuntare: si abbraccia, con 
 <%= render partial: 'components/introduzione',
   locals: {
     introduzioneimage: '/images/new-orleans/foto1.webp',
-    introduzionetext: 'Terza Tappa',
+    introduzionetext: '',
     introduzionetitle: 'New Orleans',
     introduzionesubtitle: 'Introduzione',
     introduzionesubtitle2: 'A New Orleans non si cammina: si danza, si ondeggia, si respira al ritmo del jazz che sgorga dalle strade e si infila ovunque, come un profumo denso e avvolgente. È una città che ti prende per mano e ti invita a lasciarti andare. Iniziate dal cuore pulsante, il French Quarter, con i suoi balconi in ferro battuto, le piazze animate da musicisti e artisti di strada, i vicoli pieni di storie e segreti. Seguite una melodia che arriva da lontano, fermatevi a guardare una performance improvvisata, assaggiate qualcosa di tipico mentre il tempo sembra rallentare.',
@@ -193,4 +204,113 @@ Per chiudere la giornata, niente di meglio di un concerto in club come lo Snug H
 
  
 
+<%= render partial: 'components/pacchetti2',
+  locals: {
+    pacchettiimage: '/images/grand-canyon/hero.jpg',
+    pacchettititle: 'Las Vegas',
+    pacchettisubtitle: 'Las Vegas è un grande spettacolo a cielo aperto, dove ogni dettaglio sembra pensato per stupire. Appena arrivati, lasciatevi conquistare dalla Strip: luci ovunque, hotel che sembrano parchi a tema, fontane che danzano al ritmo della musica e un’energia che non dorme mai. Anche solo passeggiare è un’esperienza. Fermatevi per una foto davanti alla Torre Eiffel, alla Sfinge o sotto un’insegna al neon: è tutto un po’ folle, ma è proprio questo il suo fascino.
+Con i bambini al seguito, Las Vegas può rivelarsi sorprendentemente accogliente. Molti hotel ospitano attrazioni pensate anche per i più piccoli: acquari, giostre, spettacoli di magia, voliere, cupole che simulano cieli stellati e persino montagne russe che sfrecciano tra i grattacieli. Alcune strutture offrono anche servizi di babysitting, una soluzione comoda per chi desidera ritagliarsi qualche ora di libertà sapendo che i bambini sono seguiti con cura.
+Ma Las Vegas non è solo luci e casinò. Basta guardare un po’ più in profondità per scoprire spettacoli teatrali di altissimo livello, gallerie d’arte ben nascoste e spazi dove l’atmosfera cambia, rallenta, sorprende. È una città che si reinventa continuamente, capace di far convivere l’apparenza con la sostanza.
+E se a un certo punto vi viene voglia di respirare, lasciate la Strip alle spalle e raggiungete il deserto. La Valley of Fire e il Red Rock Canyon sono a poca distanza e offrono panorami spettacolari, rocce rosse che sembrano scolpite a mano e un silenzio che fa bene a tutti, grandi e piccoli. Qui ci si può arrampicare, correre, inventare storie tra le rocce. È un altro mondo, ma è a portata di mano.',
+    pacchettiofferte: 'Alla panoramica delle offerte',
+    pacchetti: [
+      {
+        image: '/images/las-vegas/las-vegas.avif',
+        title: '',
+        description: '',
+        subtitle: 'E se a un certo punto vi viene voglia di respirare, lasciate la Strip alle spalle e raggiungete il deserto. La Valley of Fire e il Red Rock Canyon sono a poca distanza e offrono panorami spettacolari, rocce rosse che sembrano scolpite a mano e un silenzio che fa bene a tutti, grandi e piccoli. Qui ci si può arrampicare, correre, inventare storie tra le rocce. È un altro mondo, ma è a portata di mano.',
+        details: '',
+        periods: '',
+        servizi: [ ]
+      },
+      {
+        image: '/images/las-vegas/las-vegas-notte.webp',
+        title: '',
+        description: '',
+        subtitle: 'Una notte a Las Vegas può bastare per dire “ci siamo stati”, ma se le date il tempo di raccontarsi, scoprirete che questa città sa essere anche ironica, creativa, viva. Con un po’ di attenzione e tanta curiosità, può diventare una meta indimenticabile anche per chi viaggia in famiglia.',
+        details: '',
+        periods: '',
+        servizi: [ ]
+      },
+    ]
+  }
+%>
 
+
+
+
+<%= render partial: 'components/introduzione',
+  locals: {
+    introduzioneimage: '/images/new-orleans/foto1.webp',
+    introduzionetext: '',
+    introduzionetitle: 'Montrèal',
+    introduzionesubtitle: 'Introduzione',
+    introduzionesubtitle2: 'Montréal è un abbraccio tra l’eleganza europea e l’energia del Nord America. Qui il francese si intreccia con l’inglese in modo spontaneo, creando una melodia urbana che racconta la storia di una città accogliente, creativa e profondamente multiculturale. Il viaggio può iniziare dalla Vieux-Montréal, la città vecchia, dove ogni passo sulle strade acciottolate sembra portarvi indietro nel tempo. Le facciate in pietra, le chiese storiche e le caffetterie dal sapore francese fanno pensare a Parigi, ma con un’aria più rilassata, quasi domestica.',
+    introduzionesubtitle3: 'Con i bambini al seguito, Montréal sa essere particolarmente generosa. Tra giardini pubblici, musei interattivi e festival pieni di colori e attività, l’esperienza diventa coinvolgente per tutta la famiglia. Una passeggiata sul Mont Royal, ad esempio, è perfetta per tutti: i piccoli possono correre sui prati, osservare scoiattoli, divertirsi in uno dei parchi gioco o lanciarsi su una slitta se è inverno, mentre i grandi si godono una vista spettacolare sulla città.',
+    cards: [
+      { image: '/images/montreal/lonely-planet.jpg', description: 'Jardin botanique de Montréal' },
+      { image: '/images/montreal/montreal-skyline.webp', description: 'Montreal' }
+    ]
+  }
+%>
+
+
+
+
+  <%= render partial: 'components/carddx',
+    locals: {
+      immagine: '/images/montreal/graffiti1.webp',
+      titolo_card: "L'Arte dei Murales",
+      testo_card: 'Se ami l’arte che vibra tra le strade e parla direttamente all’anima, Montréal saprà sorprenderti. Qui, ogni angolo può trasformarsi in una tela, ogni muro racconta una storia.
+Tutto è cominciato nel 1996 con Under Pressure, il festival di graffiti più longevo del Nord America. Ogni estate, il Quartier des Spectacles si accende di colori, musica e creatività condivisa: uno spazio dove l’arte è libera, giovane, e profondamente legata alla comunità.
+Poi è arrivato MURAL, nel 2012, e ha cambiato tutto. Questo festival ha trasformato il Boulevard Saint-Laurent in una galleria urbana internazionale, accessibile a tutti, dove i murales prendono vita davanti ai tuoi occhi, tra performance dal vivo e atmosfere vibranti.
+Uno dei simboli di questa fusione tra passato e futuro è Façades, il murale monumentale di Rafael Sottolichio: da una parte, l’omaggio alla Montréal neoclassica; dall’altra, un’illusione ottica moderna che incanta e sorprende.'
+    }
+  %>
+
+
+<%= render partial: 'components/newsletter',
+  locals: {
+    newslettertitle: 'Tutte le novità di Oltremare Travel. Iscriviti ora!',
+    newsletterbutton: 'Iscriviti',
+  }
+%>
+  
+
+
+  <%= render partial: 'components/footer',
+  locals: {
+    indirizzo: [
+      'Oltremare Travel',
+      'Resort Passeier',
+      'Via Passiria 47',
+      '39015 San Leonardo in Passiria',
+      'presso Merano',
+      'Italia',
+    ],
+    contatti: [
+      'Tel: +39 0473 645474',
+      'info@oltremaretravel.it',
+      'www.oltremaretravel.it/it',
+    ],
+    servizi: [
+      'Immobili del Oltremare Travel',
+      'Medical Center Oltremare Travel',
+      'News dal Oltremare Travel',
+      'Lavorare al Oltremare Travel',
+      'Immagini',
+      'Webcam',
+    ],
+    informazioni: [
+      'Social media wall',
+      'Sostenibilità',
+      'Negozi',
+      'Compliance',
+    ],
+    recensioni: [
+      '★★★★★',
+      '96% di 100%',
+      'più di 4895 recensioni',
+    ]
+  }
+%>
