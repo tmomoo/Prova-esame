@@ -1,0 +1,65 @@
+<section
+    class="relative bg-cover bg-center text-white min-h-[90vh] flex items-center"
+    style="background-image: url(<%= pacchettiimage %>);"
+>
+    <!-- Overlay oscurato intero -->
+    <div class="absolute inset-0 bg-black/80 z-0"></div>
+
+    <div class="relative z-10 w-full px-6 md:px-16">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center lg:items-center justify-between">
+            
+            <!-- Testo al centro verticale sinistra -->
+            <div class="flex-1 text-center lg:text-left flex flex-col justify-center items-center lg:items-start">
+                <h2 class="text-5xl font-medium mb-6">Il Grand Canyon</h2>
+                <p class="mb-6 leading-relaxed max-w-xl font-medium">
+                    Il Grand Canyon non è solo un posto da vedere: è un’emozione che si sente sulla pelle, un silenzio che parla, una grandezza che lascia senza fiato. Nessuna foto riesce davvero a catturarlo ci si prova, certo, ma poi ci si accorge che tutto quello che conta succede dentro. Affacciarsi dal South Rim, soprattutto all’alba, è uno di quei momenti che restano impressi. L’aria è immobile, il cielo inizia a schiarirsi piano, e la luce comincia a danzare sulle pareti del canyon, colorandole di rosso, oro, rame. È uno spettacolo che non fa rumore, ma che vi riempie di meraviglia.
+Anche con i bambini, questo luogo sa essere speciale. Certo, serve un po’ di attenzione in più, ma è anche un’occasione per condividere un senso di stupore raro. Guarderanno in silenzio, anche solo per un attimo, e magari faranno domande che vi sorprenderanno. Potete scegliere sentieri più semplici e brevi, come i primi tratti del Bright Angel Trail, perfetti per allontanarsi un po’ dalla folla senza fare escursioni troppo impegnative. Basta poco per ritrovarsi immersi in una pace assoluta, in un paesaggio che sembra scolpito dal tempo.
+Ogni passo insegna qualcosa. Ai grandi, a rallentare. Ai piccoli, ad ascoltare. Il vento tra le rocce, il grido lontano di un uccello, il proprio respiro che si fa più calmo. Qui non si corre, non si riempie il tempo: lo si assapora.
+Il Grand Canyon non si attraversa come una tappa da spuntare: si abbraccia, con rispetto e con stupore. E anche i bambini, nel loro modo diretto e sincero, lo capiscono. A modo loro, forse meglio di noi.
+                </p>
+                <a href="#offerte" class="text-white underline font-medium">
+                    
+                </a>
+            </div>
+
+
+            <!-- Card a metà sezione destra -->
+            <div class="flex-1 grid md:grid-cols-2 gap-8 mt-8">
+                <!-- Card 1 -->
+                
+                <% pacchetti.each do |pacchetto| %>
+                    <div class="overflow-hidden shadow-none">
+                        <div class="offer-card">
+                            <img
+                                src="<%= pacchetto[:image] %>"
+                                alt="<%= pacchetto[:title] %>"
+                                class="w-full h-100 object-cover"
+                            />
+                            <div class="p-6">
+                                <p class="text-sm font-medium mb-1" style="color: #856e51;">
+                                    <%= pacchetto[:description] %>
+                                </p>
+                                <h3 class="text-lg font-medium text-white mb-1"><%= pacchetto[:title] %></h3>
+                                <p class="text-sm font-medium mb-2">
+                                    <strong><%= pacchetto[:subtitle] %></strong>
+                                </p>
+                                <ul class="list-disc list-inside text-sm text-gray-300 font-medium mb-2">
+                                    <% pacchetto[:servizi].each do |servizio| %>
+                                        <li><%= servizio %></li>
+                                    <% end %>
+                                </ul>
+                                <a href="#periodi" class="text-sm underline text-white font-medium mb-2 inline-block">
+                                    <%= pacchetto[:periods] %>
+                                </a>
+                                <a href="#dettagli" class="text-sm underline text-white font-medium block mt-1">
+                                    <%= pacchetto[:details] %>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+
+        </div>
+    </div>
+</section>

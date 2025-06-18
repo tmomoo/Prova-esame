@@ -42,8 +42,159 @@
 
 <%= render partial: 'components/cardtesto',
   locals: {
-    testotitle: 'Le nostre oasi di pace',
-    testosubtitle: 'Qui troverete sempre quello che cercate. Date un’occhiata alle nostre camere, suite e chalet e trovate il vostro angolo di paradiso.',
-    panoramica: 'Alla panoramica delle camere',
+    testotitle: 'Cosa Visitare',
+    testosubtitle: 'Qui troverete alcune delle tappe imperdibili della nostra avventura a San Francisco.',
+  }
+%>
+
+
+<%= render partial: 'components/cardsx',
+    locals: {
+      immagine: '/images/cardsx/Alamo-Square.webp',
+      titolo_card: 'Alamo Square',
+      testo_card: 'Le Painted Ladies, con la loro eleganza un po’ nostalgica, sembrano stare lì apposta per farvi rallentare, per farvi guardare davvero. Dietro di loro, i grattacieli ricordano che il tempo va avanti, ma con stile. Poco distante, il Ferry Building è un’esplosione di sapori e colori: bancarelle, profumi, chiacchiere, piccoli assaggi che raccontano storie locali e passioni autentiche. Fermatevi, assaggiate qualcosa, godetevela.'
+    }
+  %>
+
+  <%= render partial: 'components/carddx',
+    locals: {
+      immagine: '/images/cardsx/montana-bay.webp',
+      titolo_card: 'Montana Bay Aquarium',
+      testo_card: 'Se avete bambini con voi  o se dentro di voi c’è ancora quel pizzico di stupore che si accende davanti a un acquario  spingetevi fino al Monterey Bay Aquarium. Sì, è un po’ fuori città, ma credeteci: ne vale la pena. Davanti a una medusa che danza nell’acqua, o a un’enorme vasca piena di squali, tornerete bambini anche voi, con il naso incollato al vetro e gli occhi spalancati.'
+    }
+  %>
+
+  <%= render partial: 'components/cardsx',
+    locals: {
+      immagine: '/images/cardsx/mission-district.webp',
+      titolo_card: 'Mission District',
+      testo_card: 'Ah, e se qualcuno vi dice di andare subito a Union Square… beh, potete anche saltarla. La vera San Francisco è altrove. È nei quartieri con le scale ripidissime, nei tram che sembrano usciti da un film, nei murales del Mission District, nei profumi intensi di spezie a Chinatown. È nei dettagli che non si cercano, ma che si scoprono per caso. Seguite la vostra curiosità, parlate con la gente, perdetevi un po’. San Francisco sa sorprendere chi è disposto a lasciarsi andare.'
+    }
+  %>
+
+  <%= render partial: 'components/carddx',
+    locals: {
+      immagine: '/images/cardsx/montana-bay.webp',
+      titolo_card: 'Montana Bay Aquarium',
+      testo_card: 'Se avete bambini con voi  o se dentro di voi c’è ancora quel pizzico di stupore che si accende davanti a un acquario  spingetevi fino al Monterey Bay Aquarium. Sì, è un po’ fuori città, ma credeteci: ne vale la pena. Davanti a una medusa che danza nell’acqua, o a un’enorme vasca piena di squali, tornerete bambini anche voi, con il naso incollato al vetro e gli occhi spalancati.'
+    }
+  %>
+
+  <%= render partial: 'components/scheda',
+  locals: {
+    schedaimage: '/images/cardsx/beat-generation.webp',
+    schedatitle: 'The Beat Generation',
+    
+    schedainformazioni: 'Posti da visitare'
+  }
+%>
+
+
+<%= render partial: 'components/pacchetti',
+  locals: {
+    pacchettiimage: '/images/grand-canyon/hero.jpg',
+    pacchettititle: 'Il Grand Canyon',
+    pacchettisubtitle: 'Il Grand Canyon non è solo un posto da vedere: è un’emozione che si sente sulla pelle, un silenzio che parla, una grandezza che lascia senza fiato. Nessuna foto riesce davvero a catturarlo ci si prova, certo, ma poi ci si accorge che tutto quello che conta succede dentro. Affacciarsi dal South Rim, soprattutto all’alba, è uno di quei momenti che restano impressi. L’aria è immobile, il cielo inizia a schiarirsi piano, e la luce comincia a danzare sulle pareti del canyon, colorandole di rosso, oro, rame. È uno spettacolo che non fa rumore, ma che vi riempie di meraviglia.
+Anche con i bambini, questo luogo sa essere speciale. Certo, serve un po’ di attenzione in più, ma è anche un’occasione per condividere un senso di stupore raro. Guarderanno in silenzio, anche solo per un attimo, e magari faranno domande che vi sorprenderanno. Potete scegliere sentieri più semplici e brevi, come i primi tratti del Bright Angel Trail, perfetti per allontanarsi un po’ dalla folla senza fare escursioni troppo impegnative. Basta poco per ritrovarsi immersi in una pace assoluta, in un paesaggio che sembra scolpito dal tempo.
+Ogni passo insegna qualcosa. Ai grandi, a rallentare. Ai piccoli, ad ascoltare. Il vento tra le rocce, il grido lontano di un uccello, il proprio respiro che si fa più calmo. Qui non si corre, non si riempie il tempo: lo si assapora.
+Il Grand Canyon non si attraversa come una tappa da spuntare: si abbraccia, con rispetto e con stupore. E anche i bambini, nel loro modo diretto e sincero, lo capiscono. A modo loro, forse meglio di noi.',
+    pacchettiofferte: 'Alla panoramica delle offerte',
+    pacchetti: [
+      {
+        image: '/images/grand-canyon/foto1.jpg',
+        title: '',
+        description: '',
+        subtitle: 'Ogni passo insegna qualcosa. Ai grandi, a rallentare. Ai piccoli, ad ascoltare. Il vento tra le rocce, il grido lontano di un uccello, il proprio respiro che si fa più calmo. Qui non si corre, non si riempie il tempo: lo si assapora.',
+        details: '',
+        periods: '',
+        servizi: [ ]
+      },
+      {
+        image: '/images/grand-canyon/foto2.jpg',
+        title: '',
+        description: '',
+        subtitle: 'Il Grand Canyon non si attraversa come una tappa da spuntare: si abbraccia, con rispetto e con stupore. E anche i bambini, nel loro modo diretto e sincero, lo capiscono. A modo loro, forse meglio di noi.',
+        details: '',
+        periods: '',
+        servizi: [ ]
+      },
+    ]
+  }
+%>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= render partial: 'components/introduzione',
+  locals: {
+    introduzioneimage: '/images/new-orleans/foto1.webp',
+    introduzionetext: 'Terza Tappa',
+    introduzionetitle: 'New Orleans',
+    introduzionesubtitle: 'Introduzione',
+    introduzionesubtitle2: 'A New Orleans non si cammina: si danza, si ondeggia, si respira al ritmo del jazz che sgorga dalle strade e si infila ovunque, come un profumo denso e avvolgente. È una città che ti prende per mano e ti invita a lasciarti andare. Iniziate dal cuore pulsante, il French Quarter, con i suoi balconi in ferro battuto, le piazze animate da musicisti e artisti di strada, i vicoli pieni di storie e segreti. Seguite una melodia che arriva da lontano, fermatevi a guardare una performance improvvisata, assaggiate qualcosa di tipico mentre il tempo sembra rallentare.',
+    introduzionesubtitle3: 'Anche i bambini qui trovano il loro ritmo. Tra i colori, la musica dal vivo e l’atmosfera di festa continua, tutto diventa un’avventura. Molti locali sono family-friendly, e i tram storici che attraversano la città sono una piccola magia anche per loro. Salite sul St. Charles Streetcar e godetevi il lento avanzare tra ville ottocentesche e viali pieni di magnolie, con quel suono metallico che sembra raccontare storie di altri tempi.',
+    cards: [
+      { image: '/images/introduzione/san-francisco.jpg', description: 'Golden Gate Bridge' },
+      { image: '/images/introduzione/san-francisco-alto.jpg', description: 'San Francisco' }
+    ]
+  }
+%>
+
+
+
+<%= render partial: 'components/cardtesto',
+  locals: {
+    testotitle: 'Cosa Visitare',
+    testosubtitle: 'Qui troverete alcune delle tappe imperdibili della nostra avventura a San Francisco.',
+  }
+%>
+
+
+<%= render partial: 'components/cardsx',
+    locals: {
+      immagine: '/images/cardsx/Alamo-Square.webp',
+      titolo_card: 'Alamo Square',
+      testo_card: 'Le Painted Ladies, con la loro eleganza un po’ nostalgica, sembrano stare lì apposta per farvi rallentare, per farvi guardare davvero. Dietro di loro, i grattacieli ricordano che il tempo va avanti, ma con stile. Poco distante, il Ferry Building è un’esplosione di sapori e colori: bancarelle, profumi, chiacchiere, piccoli assaggi che raccontano storie locali e passioni autentiche. Fermatevi, assaggiate qualcosa, godetevela.'
+    }
+  %>
+
+  <%= render partial: 'components/carddx',
+    locals: {
+      immagine: '/images/cardsx/montana-bay.webp',
+      titolo_card: 'Montana Bay Aquarium',
+      testo_card: 'Se avete bambini con voi  o se dentro di voi c’è ancora quel pizzico di stupore che si accende davanti a un acquario  spingetevi fino al Monterey Bay Aquarium. Sì, è un po’ fuori città, ma credeteci: ne vale la pena. Davanti a una medusa che danza nell’acqua, o a un’enorme vasca piena di squali, tornerete bambini anche voi, con il naso incollato al vetro e gli occhi spalancati.'
+    }
+  %>
+
+  <%= render partial: 'components/cardsx',
+    locals: {
+      immagine: '/images/cardsx/mission-district.webp',
+      titolo_card: 'Mission District',
+      testo_card: 'Ah, e se qualcuno vi dice di andare subito a Union Square… beh, potete anche saltarla. La vera San Francisco è altrove. È nei quartieri con le scale ripidissime, nei tram che sembrano usciti da un film, nei murales del Mission District, nei profumi intensi di spezie a Chinatown. È nei dettagli che non si cercano, ma che si scoprono per caso. Seguite la vostra curiosità, parlate con la gente, perdetevi un po’. San Francisco sa sorprendere chi è disposto a lasciarsi andare.'
+    }
+  %>
+
+  <%= render partial: 'components/carddx',
+    locals: {
+      immagine: '/images/cardsx/montana-bay.webp',
+      titolo_card: 'Montana Bay Aquarium',
+      testo_card: 'Se avete bambini con voi  o se dentro di voi c’è ancora quel pizzico di stupore che si accende davanti a un acquario  spingetevi fino al Monterey Bay Aquarium. Sì, è un po’ fuori città, ma credeteci: ne vale la pena. Davanti a una medusa che danza nell’acqua, o a un’enorme vasca piena di squali, tornerete bambini anche voi, con il naso incollato al vetro e gli occhi spalancati.'
+    }
+  %>
+
+  <%= render partial: 'components/scheda',
+  locals: {
+    schedaimage: '/images/cardsx/beat-generation.webp',
+    schedatitle: 'The Beat Generation',
+    
+    schedainformazioni: 'Posti da visitare'
   }
 %>
