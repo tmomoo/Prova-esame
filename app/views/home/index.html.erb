@@ -9,13 +9,31 @@
 %>
 
 
+
 <%= render partial: 'components/hero',
   locals: {
     cards: [
-      { image: '/images/quellenhof/news1.webp', title: 'Opere artistiche fantastiche', description: '01/05/2023' },
-      { image: '/images/quellenhof/news2.webp', title: 'Mostra d\'arte', description: '02/12/2023' },
-      { image: '/images/quellenhof/news3.webp', title: 'Opere stupende', description: '03/01/2023' },
-      { image: '/images/quellenhof/news4.webp', title: 'Corso d\'arte', description: '04/09/2023' }
+      { image: '/images/news/las vegas.png', title: '', description: 'Las Vegas' },
+      { image: '/images/news/canyon.jpg', title: '', description: 'Grand Canyon' },
+      { image: '/images/news/san francisco.png', title: '', description: 'San Francisco' },
+      { image: '/images/news/1.png', title:'', description: 'Brooklyn' }
+      
+      
+    ]
+  }
+%>
+
+<%= render partial: 'components/introduzione',
+  locals: {
+    introduzioneimage: '/images/quellenhof/bg-section.jpg',
+    introduzionetext: 'Un lusso allo stato puro',
+    introduzionetitle: 'Benvenuti nel vostro hotel di lusso in Alto Adige a 5 stelle',
+    introduzionesubtitle: 'Le strutture del Quellenhof Luxury Resort Passeier',
+    introduzionesubtitle2: 'Nel vostro hotel a 5 stelle in Alto Adige potrete scegliere tra quattro hotel e due residenze. Qualunque struttura scegliate, lasciatevi viziare dagli esclusivi servizi inclusi del nostro hotel di lusso in Alto Adige: siamo certi che vi brilleranno gli occhi.',
+    introduzionesubtitle3: 'Un angolo di paradiso nel cuore dello scenario alpino della Val Passiria. Un’oasi di pace per trascorrere tempo per sé e con chi si ama. Un hotel di lusso in Alto Adige a cinque stelle, un sogno a occhi aperti. Benvenuti al Quellenhof Luxury Resort Passeier. Benvenuti in uno straordinario regno delle vacanze.',
+    cards: [
+      { image: '/images/quellenhof/card1.jpg', description: 'Guesthouse V' },
+      { image: '/images/quellenhof/card2.jpg', description: 'Guesthouse P' }
     ]
   }
 %>
