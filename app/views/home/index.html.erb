@@ -1,0 +1,21 @@
+<%= render partial: 'components/navbar',
+  locals: {
+    navbarlogo: '/images/navbar/logo.png',
+    navbarlink1: 'Home',
+    navbarlink2: 'Chi Siamo',
+    navbarlink3: 'Contatti',
+    navbarsearchicon: '/images/navbar/cerca.png'
+  }
+%>
+
+
+<%= render partial: 'components/hero',
+  locals: {
+    cards: [
+      { image: '/images/quellenhof/news1.webp', title: 'Opere artistiche fantastiche', description: '01/05/2023' },
+      { image: '/images/quellenhof/news2.webp', title: 'Mostra d\'arte', description: '02/12/2023' },
+      { image: '/images/quellenhof/news3.webp', title: 'Opere stupende', description: '03/01/2023' },
+      { image: '/images/quellenhof/news4.webp', title: 'Corso d\'arte', description: '04/09/2023' }
+    ]
+  }
+%>
